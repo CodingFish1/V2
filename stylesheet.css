@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+/***********************/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg{
+    background-image:url(../img/banner.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+
+}
+
+header span{
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 308px;
+    color:white;
+    font-family: Roboto Black Italic;
+}
+
+header h1{
+    font-size: 80px;
+    line-height: 106px;
+    color:white;
+    font-family: Roboto Black Italic;
+}
+
+header p{
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+}
+
+.icon{
+    padding-top: 40px;
+}
+
+.icon-layout{
+    display: flex;
+    padding-bottom: 308px;
+}
+
+.icon-layout li{
+    margin-right: 16px;
+}
+
+li:last-child {
+    margin-right: 0px;
+  }
+
+/***About*****/
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about img{
+    width: 384px;
+}
+
+.about h2{
+    padding-top: 56px;
+    margin-bottom: 40px;
+    font-size: 64px;
+    line-height: 84px;
+}
+
+.about .profile{
+    margin-top: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.about .profile li{
+    text-align: center;
+}
+
+.mb01{
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.mb02{
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.mb03{
+    margin-bottom: 23px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.mt01{
+    margin-top: 27px;
+}
+
+.careers{
+    padding-bottom: 56px;
+}
+
+.careers li{
+    margin-top: 28px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.careers li::before {
+    border: 1px solid #891818;
+    margin-right: 16px;
+    content:"";
+    width: 22px;
+    height: 22px;
+    background-color: #891818;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /******Brand***********/
+.brand{
+    background-color: #000000;
+    border: 1px solid #707070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand h2{
+    padding-top: 55px;
+    font-size: 64px;
+    line-height: 84px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.brand p{
+    font-size: 24px;
+    line-height: 32px;
+    color:white;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.brand .brand-p2{
+    margin-bottom: 68px;
+    font-size: 20px;
+    line-height: 30px;
+    color:white;
+    text-align: center;
+}
+
+.brand-img1{
+    width: 792px;
+    margin-bottom: 40px;
+}
+
+.brand-img2{
+    display: flex;
+    justify-content: center;
+}
+
+.brand-img2 img{
+    width: 588px;
+    margin-left: 24px;
+    padding-bottom: 159px;
+}
+
+/***Works***/
+.works{
+    padding-top: 56px;
+    padding-bottom: 96px;
+}
+
+.img-word-layout p{
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.works-content h2{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 84px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.works-content p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.img-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-word-layout{
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+.mr24px{
+    margin-right: 24px;
+}
+
+.img-word-layout p{
+    text-align: center;
+}
+
+.img-layout1{
+    width: 384px;
+}
+
+.img-layout2{
+    width: 588px;
+}
+
+/*****Footer*****/
+.ft-bg{
+    background-color: #000;
+}
+
+.ft-bg h2{
+    padding-top: 64px;
+    font-size: 64px;
+    line-height: 84px;
+    margin-bottom: 16px;
+    color:white;
+    text-align: center;
+}
+
+.ft-bg p{
+    font-size: 33px;
+    line-height: 33px;
+    color: white;
+    text-align: center;
+}
+
+.mb16px{
+    margin-bottom: 16px;
+}
+
+.pb64px{
+    padding-bottom: 64px;
+}
